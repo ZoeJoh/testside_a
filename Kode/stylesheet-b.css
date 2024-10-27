@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #264059;
+    --main-color: #F9F7F6;
+    --CTA: #E5690B;
+    --CTA-hover: #f5720e;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--main-color);
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-menu {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    padding-top: 100px;
+    font-weight: 200;
+}
+
+.kategorier, .location-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding-top: 60px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px 0;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.option {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+/* Styling for buttons */
+.btn {
+    background-color: var(--CTA);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: ;
+    width: 100%; /* Full width button */
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px; /* Less space above button */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.btn-b {
+    background-color: var(--CTA);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: ;
+    width: 100%; /* Full width button */
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease; /* Smooth transitions */
+}
+
+
+/* Hover effect to grow the text inside the button */
+.btn:hover {
+    transform: scale(1.05); /* Scale the button text slightly */
+    background-color: var(--CTA-hover);
+}
+
+
+    .card-1 {
+        background-color: #f39c12;
+        background-image: url('voksen.webp');
+    }
+    
+    .card-2 {
+        background-color: #27ae60;
+        background-image: url('ung.webp');
+    }
+    
+    .card-3 {
+        background-color: #2980b9;
+        background-image: url('barn.webp');
+    }
+
+
+.kort-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover {
+    color: #E5690B;
+    transition: 0.3s;
+}
+
+.valg {
+    max-width: 400px; /* Control maximum width instead of a fixed width */
+    margin: 0 auto; /* Center the .valg div */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button {
+    background-color: #f5720e;
+    color: var(--main-color);
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0; /* Add vertical spacing between buttons */
+    cursor: pointer;
+    width: 100%; /* Make buttons full width within .valg */
+    max-width: 200px; /* Set a maximum width for buttons */
+    text-align: center;
+}
+
+
+button:hover {
+    background-color: #E5690B;
+}
+
+.find-behandler {
+    background-color: #f5720e;
+    color: var(--main-color);
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 0; /* Add vertical spacing between buttons */
+    cursor: pointer;
+    width: 100%; /* Make buttons full width within .valg */
+    max-width: 200px; /* Set a maximum width for buttons */
+    text-align: center;
+}
+
+.slut {
+    height: 20vh;
+}

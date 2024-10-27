@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vælg Behandler - Trin 1</title>
+    <link rel="stylesheet" href="stylesheet-a.css">
+    <script>
+        // Toggle visibility of options
+        function toggleVisibility(id) {
+            const section = document.getElementById(id);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-logo">
+            <p>LOGO</p>
+        </div>
+        <div class="nav-menu">
+            <p>MENU</p>
+            <p>MENU</p>
+            <p>MENU</p>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>MENTAL SUNDHED FOR <b>ALLE</b></h1>
+        <h2><i>Hvem har brug for hjælp?</i></h2>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="kategorier">
+        <div class="card-container">
+            <div class="card card-1">
+                <button class="btn" onclick="location.href='step2_a.html?category=adult'">VOKSEN</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-2">
+                <button class="btn" onclick="location.href='step2_a.html?category=youth'">UNG</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-3">
+                <button class="btn" onclick="location.href='step2_a.html?category=child'">BARN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual Toggle Buttons and Options -->
+    <div class="toggle-knapper">
+
+        <div class="toggle-section">
+            <button class="toggle-btn" onclick="toggleVisibility('land-options')">Hvor i landet?</button>
+            <div id="land-options" class="options" style="display: none;">
+                <button class="option">Hovedstaden</button>
+                <button class="option">Nordsjælland</button>
+                <button class="option">Sydsjælland</button>
+                <button class="option">Fyn</button>
+                <button class="option">Midtjylland</button>
+                <button class="option">Nordjylland</button>
+            </div>
+        </div>
+         
+          <div class="toggle-section">
+            <button class="toggle-btn" onclick="toggleVisibility('behandler-options')">Vælg behandler</button>
+            <div id="behandler-options" class="options" style="display: none;">
+                <button class="option">Psykolog</button>
+                <button class="option">Psykiater</button>
+            </div>
+        </div>
+    </div>
+    <div class="find-behandler">
+        <button>FIND BEHANDLER</button>
+    </div>
+
+    <div class="slut"></div>
+</body>
+</html>
